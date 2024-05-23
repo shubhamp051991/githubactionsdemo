@@ -1,4 +1,7 @@
 from utils.genericUtils import calculate_square_root
+import sys
+
+print(sys.path)
 
 def runner(num):
     sq = calculate_square_root(num)

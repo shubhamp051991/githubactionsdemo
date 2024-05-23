@@ -19,6 +19,9 @@ jobs:
       - name: install dependencies
         uses: actions/setup-python@v3
 
+      - name: set pythonpath
+        run: export pythonpath="githubactionsdemo"
+
       - name: execute command
         run: |
           python3 src/main.py
