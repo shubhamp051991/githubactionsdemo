@@ -1,0 +1,21 @@
+name: my first github action
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - run: echo "Checkout repository ${{github.ref}}"
+
+      - name: install dependencies
+        run: echo "install dependencies"
+        uses: actions/setup-python@v3
+      
