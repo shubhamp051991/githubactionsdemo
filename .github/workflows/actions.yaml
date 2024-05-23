@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-python@v3
 
       - name: set pythonpath
-        run: export pythonpath="githubactionsdemo/"
+        run: export PYTHONPATH="githubactionsdemo/"
 
       - name: execute command
         run: |
